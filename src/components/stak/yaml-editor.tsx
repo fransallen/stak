@@ -11,7 +11,15 @@ interface EditorProps {
   placeholder: string;
 }
 
-export function YamlEditor({ value, onChange, errors, resourceCount, filename, sample, placeholder }: EditorProps) {
+export function YamlEditor({
+  value,
+  onChange,
+  errors,
+  resourceCount,
+  filename,
+  sample,
+  placeholder,
+}: EditorProps) {
   const fileInput = useRef<HTMLInputElement>(null);
   const dropRef = useRef<HTMLDivElement>(null);
 
@@ -98,8 +106,8 @@ export function YamlEditor({ value, onChange, errors, resourceCount, filename, s
           spellCheck={false}
           placeholder={placeholder}
           className={cn(
-            "h-full w-full resize-none bg-kumo-base p-4 font-mono text-[13px] leading-relaxed text-kumo-default outline-none",
-            "placeholder:text-kumo-placeholder",
+            "yaml-editor h-full w-full resize-none bg-kumo-base p-4 font-mono text-[13px] leading-relaxed text-kumo-default outline-none",
+            "placeholder:text-kumo-placeholder [scrollbar-width:thin] [scrollbar-color:var(--kumo-hairline-strong)_transparent]",
           )}
         />
       </div>
