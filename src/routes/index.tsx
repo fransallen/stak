@@ -178,6 +178,14 @@ function Index() {
             {editorOpen ? "Hide editor" : "Show editor"}
           </button>
           <a
+            href="https://github.com/fransallen/stak"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-md px-2.5 py-1 text-xs text-kumo-link transition-colors hover:bg-kumo-tint"
+          >
+            GitHub ↗
+          </a>
+          <a
             href={
               mode === "kubernetes"
                 ? "https://kubernetes.io/docs/concepts/overview/working-with-objects/"
