@@ -64,6 +64,11 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <Scripts />
+        <script
+          defer
+          src="https://api-stak.reflexapi.net/app"
+          data-website-id="68b35b32-3137-46a6-981f-aaa2973dff86"
+        ></script>
       </body>
     </html>
   );
